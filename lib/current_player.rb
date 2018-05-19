@@ -2,13 +2,11 @@ board=["X", "O"]
 
 def turn_count(board)
   counter = 0
-  board.each do
-    if board(counter) == "X"
-      counter += 1
-    elsif board(counter) == "O"
-      counter +=2
-  end
+  board.each {|input| (input == "X" || input == "O")==true counter +=1}
+  puts counter
 end
+
+turn_count(board)
 
 def current_player(board)
   counter = turn_count(board)
