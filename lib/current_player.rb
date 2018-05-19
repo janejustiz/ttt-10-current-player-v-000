@@ -3,7 +3,7 @@ board=[" "," "," "," "," "," "," "," "," "]
 
 def turn_count(board)
   counter = 0
-  if board.each == "X" || board.each == "O"
+  if (board.each == "X" || board.each == "O") == true
     counter += 1
   elsif board.each == " " || board.each == "" || board.each == nil
     counter += 0
