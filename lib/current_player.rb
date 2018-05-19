@@ -1,8 +1,8 @@
-board=["O","X","X","O","X","X","X","X","X"]
+board=["X"]
 
 def turn_count(board)
   counter = 0
-  if board.each == "X" || board.each == "O" || board.each == "" || board.each == " " || board.each == nil
+  if board.each == "X"
     counter += 1
   end
 end
