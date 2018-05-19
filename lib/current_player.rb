@@ -14,14 +14,12 @@ end
 
 
 def current_player(counter)
-  if counter == 1
-    puts "X"
-  elsif counter % 2 == 0
-    puts "O"
-  elsif
-    puts "X"
+  if counter % 2 == 0
+    "O"
+  else
+    "X"
   end
 end
 
 turn_count(board)
-current_player(turn_count)
+current_player
