@@ -4,7 +4,9 @@ def turn_count(board)
   counter = 0
 board.each {|i|
   if (i == "X" || i == "O")
-    counter += 1
+    counter+=1
+  else
+    counter+=0
   end
 }
 end
