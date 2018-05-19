@@ -2,7 +2,7 @@ board=["X", "O"]
 
 def turn_count(board)
   counter = 0
-  board.each {|input| (input == "X" || input == "O")==true counter +=1}
+  board.each {|input| (input == "X" || input == "O")==true counter += 1}
   puts counter
 end
 
