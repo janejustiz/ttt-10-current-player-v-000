@@ -1,5 +1,6 @@
 board=[" "," "," "," "," "," "," "," "," "]
 
+
 def turn_count(board)
   counter = 0
   if board.each == "X"
@@ -10,6 +11,7 @@ def turn_count(board)
     counter+=0
   end
 end
+
 
 def current_player(counter)
   if counter == 1
