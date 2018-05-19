@@ -5,11 +5,10 @@ def turn_count(board)
   board.each do
     if board(counter) == "X"
       counter += 1
+    elsif board(counter) == "O"
+      coounter +=2
   end
-  puts counter
 end
-
-turn_count(board)
 
 def current_player(board)
   counter = turn_count(board)
@@ -20,3 +19,5 @@ def current_player(board)
     "X"
   end
 end
+
+current_player(board)
