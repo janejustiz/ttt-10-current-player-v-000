@@ -11,7 +11,7 @@ def turn_count(board)
 end
 
 
-def current_player
+def current_player(board)
   turn_count(board)
   if counter % 2 == 0
     "O"
@@ -21,4 +21,4 @@ def current_player
 end
 
 
-current_player
+current_player(board)
