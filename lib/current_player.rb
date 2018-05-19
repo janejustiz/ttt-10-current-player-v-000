@@ -2,8 +2,12 @@ board=[" "," "," "," "," "," "," "," "," "]
 
 def turn_count(board)
   counter = 0
-  if board.each == "X" || board.each == "O"
+  if board.each == "X"
     counter += 1
+  elsif board.each == "O"
+    counter += 1
+  elsif board.each == " " || board.each == "" || board.each == nil
+    counter+=0
   end
 end
 
@@ -12,7 +16,7 @@ def current_player(counter)
     puts "X"
   elsif counter % 2 == 0
     puts "O"
-  else
+  elsif
     puts "X"
   end
 end
