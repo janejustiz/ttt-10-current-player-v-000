@@ -5,11 +5,9 @@ def turn_count(board)
   if board.each == "X" || board.each == "O"
     counter += 1
   end
-end 
+end
 
-def(board)
-
-def current_player
+def current_player(counter)
   if counter == 1
     puts "X"
   elsif counter % 2 == 0
@@ -18,3 +16,5 @@ def current_player
     puts "X"
   end
 end
+
+turn_count(board)
