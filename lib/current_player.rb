@@ -4,7 +4,7 @@ def turn_count(board)
   counter = 0
   if board.each == "X" || board.each == "O"
     counter += 1
-  elsif board.each == "" || board.each == " " || board.each == nil
+  else
     counter += 1
   end
 end
