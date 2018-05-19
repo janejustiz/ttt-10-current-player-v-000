@@ -2,8 +2,8 @@ board=["X"]
 
 def turn_count(board)
   counter = 0
-  if board.each == "X"
-    counter += 1
+  if board == "X"
+    counter += 3
   end
 end
 
